@@ -1,6 +1,6 @@
 from scipy import signal
 import matplotlib.pyplot as plt
-#defining the transfer function which is 1/((s+1)**2)*(s+2)
+#defining the transfer function which is 1/(s**2+5*s+6)
 sys = signal.TransferFunction([1], [1, 5, 6])
 w, mag, phase = signal.bode(sys)
 
